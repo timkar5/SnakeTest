@@ -19,6 +19,7 @@ class DataOfSquareTest {
         return (ArrayList<Color>) colorListField.get(data);
     }
 
+
     // ---------- BASIC FEATURES: creation + valid indices ----------
 
     @ParameterizedTest(name = "Constructor accepts color index {0}")

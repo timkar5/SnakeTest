@@ -54,11 +54,11 @@ class WindowTest {
                 "Row index must be within grid bounds");
 
         for (int col = 0; col < Window.height; col++) {
-            assertNotNull(
-                    Window.Grid.get(rowIndex).get(col),
-                    () -> String.format("Square at (%d,%d) should not be null", rowIndex, col)
-            );
+            String message = String.format("Square at (%d,%d) should not be null", rowIndex, col);
+
+            assertNotNull(Window.Grid.get(rowIndex).get(col), message);
         }
+
     }
 
     @Test
